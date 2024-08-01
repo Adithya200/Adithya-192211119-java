@@ -6,17 +6,12 @@ public class Java1 {
         Scanner scanner = new Scanner(System.in);
 
         try {
-            // Prompt the user for three integers
             System.out.println("Enter the first integer:");
             int num1 = Integer.parseInt(scanner.nextLine());
-
             System.out.println("Enter the second integer:");
             int num2 = Integer.parseInt(scanner.nextLine());
-
             System.out.println("Enter the third integer:");
             int num3 = Integer.parseInt(scanner.nextLine());
-
-            // Check if all three integers are equal
             if (num1 == num2 && num2 == num3) {
                 System.out.println("equal");
             } else {
@@ -24,7 +19,6 @@ public class Java1 {
             }
 
         } catch (NumberFormatException e) {
-            // Handle non-integer inputs
             System.out.println("Invalid input");
         }
     }
