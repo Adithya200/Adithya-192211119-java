@@ -3,11 +3,9 @@ import java.util.Scanner;
 public class Java8 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         System.out.println("Enter the number of rows and columns for the first matrix:");
         int rowsA = scanner.nextInt();
         int colsA = scanner.nextInt();
-
         int[][] matrixA = new int[rowsA][colsA];
         System.out.println("Enter the elements of the first matrix:");
         readMatrix(scanner, matrixA, rowsA, colsA);
@@ -39,8 +37,6 @@ public class Java8 {
             }
         }
     }
-
-    // Function to multiply two matrices
     public static int[][] multiplyMatrices(int[][] A, int[][] B, int rowsA, int colsA, int colsB) {
         int[][] result = new int[rowsA][colsB];
         for (int i = 0; i < rowsA; i++) {
@@ -53,8 +49,6 @@ public class Java8 {
         }
         return result;
     }
-
-    // Function to print a matrix
     public static void printMatrix(int[][] matrix) {
         for (int[] row : matrix) {
             for (int element : row) {
